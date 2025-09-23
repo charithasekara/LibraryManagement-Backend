@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Expernetic assignment\\LMS-Assignment\\backend\\backend.csproj": {}
+    "D:\\Projects\\Expernetic assignment\\LibraryManagement-Backend\\backend.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Expernetic assignment\\LMS-Assignment\\backend\\backend.csproj": {
+    "D:\\Projects\\Expernetic assignment\\LibraryManagement-Backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Expernetic assignment\\LMS-Assignment\\backend\\backend.csproj",
+        "projectUniqueName": "D:\\Projects\\Expernetic assignment\\LibraryManagement-Backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "D:\\Projects\\Expernetic assignment\\LMS-Assignment\\backend\\backend.csproj",
+        "projectPath": "D:\\Projects\\Expernetic assignment\\LibraryManagement-Backend\\backend.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Expernetic assignment\\LMS-Assignment\\backend\\obj\\",
+        "outputPath": "D:\\Projects\\Expernetic assignment\\LibraryManagement-Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
