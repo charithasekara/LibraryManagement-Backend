@@ -51,6 +51,37 @@ namespace backend.Controllers
             return Ok(bookEntity);
         }
 
+        [HttpPut]
+        [Route("{id:guid}")]
+        public IActionResult UpdateBook(Guid id, UpdateBookDto updateBookDto)
+        {
+            var book = dbContext.Set<Book>().Find(id); // Use Set<Book>() instead of Books
+            if (book is null)
+            {
+                return NotFound();
+            }
+            book.Name = updateBookDto.Name;
+            book.Author = updateBookDto.Author;
+            book.Description = updateBookDto.Description;
+            dbContext.SaveChanges();
+            return Ok(book);
+        }
+
+        [HttpDelete]
+        [Route("{id:guid}")]
+        public IActionResult DeleteBook(Guid id)
+        {
+            var book = dbContext.Set<Book>().Find(id); // Use Set<Book>() instead of Books
+            if (book is null)
+            {
+                return NotFound();
+            }
+            dbContext.Set<Book>().Remove(book); // Use Set<Book>() instead of Books
+            dbContext.SaveChanges();
+            return Ok();
+
+        }
+
     }
 
 }
