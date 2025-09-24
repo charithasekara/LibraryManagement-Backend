@@ -22,6 +22,19 @@ namespace backend.Controllers
             return Ok(dbContext.Set<Book>().ToList()); // Use Set<Book>() instead of Books
         }
 
+        [HttpGet]
+        [Route("{id:guid}")]
+        public IActionResult GetBookById(Guid id)
+        {
+            var book = dbContext.Set<Book>().Find(id); // Use Set<Book>() instead of Books
+
+            if (book is null)
+            {
+                return NotFound();
+            }
+            return Ok(book);
+        }
+
         [HttpPost]
         public IActionResult AddBook(AddBookDto addBookDto)
         {
